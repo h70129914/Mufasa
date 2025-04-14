@@ -13,10 +13,15 @@ MonoBehaviour:
   m_Name: General_assets Shared Data
   m_EditorClassIdentifier: 
   m_TableCollectionName: General_assets
-  m_TableCollectionNameGuidString: 00000000000000000000000000000000
-  m_Entries: []
+  m_TableCollectionNameGuidString: bc242c3497f2f0a40810ddfca89027e4
+  m_Entries:
+  - m_Id: 6013146095616
+    m_Key: SampleScene/Main Canvas/Main Screen
+    m_Metadata:
+      m_Items: []
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 7897062277417795647
   m_KeyGenerator:
     rid: 7897062277417795643
   references:
@@ -26,3 +31,12 @@ MonoBehaviour:
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:
         m_CustomEpoch: 1744643484647
+    - rid: 7897062277417795647
+      type: {class: AssetTypeMetadata, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries:
+        - m_KeyId: 6013146095616
+          m_TableCodes:
+          - en
+        m_TypeString: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
