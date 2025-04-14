@@ -19,9 +19,84 @@ MonoBehaviour:
     m_Key: SampleScene/Main Canvas/Main Screen
     m_Metadata:
       m_Items: []
+  - m_Id: 7429138931712
+    m_Key: SampleScene/Main Canvas/Toturial Screen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41231106170880
+    m_Key: SampleScene/Main Canvas/Toturial Screen 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43580168069120
+    m_Key: SampleScene/Main Canvas/Toturial Screen/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43580189040640
+    m_Key: SampleScene/Main Canvas/Toturial Screen/Title 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 44676110344192
+    m_Key: SampleScene/Main Canvas/Toturial Screen/Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 44676127121408
+    m_Key: SampleScene/Main Canvas/Toturial Screen/Description 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 95438630805504
+    m_Key: SampleScene/Seond Canvas/First Screen/InputField - RTLTMP/Text Area/Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 95438895046656
+    m_Key: SampleScene/Seond Canvas/First Screen/InputField - RTLTMP/Text Area/Text
+      1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 95948595257344
+    m_Key: SampleScene/Seond Canvas/First Screen/Input field label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 95948616228864
+    m_Key: SampleScene/Seond Canvas/First Screen/Input field label 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 98406298017792
+    m_Key: SampleScene/Seond Canvas/First Screen/Submit Button/Text - RTLTMP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 98406318989312
+    m_Key: SampleScene/Seond Canvas/First Screen/Submit Button/Text - RTLTMP 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 104193644814336
+    m_Key: SampleScene/Seond Canvas/Reset Screen/Reset Button/Text - RTLTMP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 104193665785856
+    m_Key: SampleScene/Seond Canvas/Reset Screen/Reset Button/Text - RTLTMP 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 107879284596736
+    m_Key: SampleScene/Seond Canvas/First Screen/Register Button/Text - RTLTMP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 107879360094208
+    m_Key: SampleScene/Seond Canvas/First Screen/Register Button/Text - RTLTMP 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 118287290589184
+    m_Key: SampleScene/Seond Canvas/Record Screen/Record Button/Text - RTLTMP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 118287374475264
+    m_Key: SampleScene/Seond Canvas/Record Screen/Record Button/Text - RTLTMP 1
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items:
     - rid: 7897062277417795647
+    - rid: 7897062277417795685
+    - rid: 7897062277417795688
   m_KeyGenerator:
     rid: 7897062277417795643
   references:
@@ -38,5 +113,90 @@ MonoBehaviour:
         - m_KeyId: 6013146095616
           m_TableCodes:
           - en
+          - ar
+        - m_KeyId: 7429138931712
+          m_TableCodes:
+          - en
+          - ar
+        - m_KeyId: 41231106170880
+          m_TableCodes:
+          - en
+          - ar
         m_TypeString: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+    - rid: 7897062277417795685
+      type: {class: AssetTypeMetadata, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries:
+        - m_KeyId: 43580168069120
+          m_TableCodes:
+          - en
+          - ar
+        - m_KeyId: 44676110344192
+          m_TableCodes:
+          - en
+          - ar
+        - m_KeyId: 95438630805504
+          m_TableCodes:
+          - en
+          - ar
+        - m_KeyId: 95948595257344
+          m_TableCodes:
+          - en
+          - ar
+        - m_KeyId: 98406298017792
+          m_TableCodes:
+          - en
+          - ar
+        - m_KeyId: 104193644814336
+          m_TableCodes:
+          - en
+          - ar
+        - m_KeyId: 107879284596736
+          m_TableCodes:
+          - en
+          - ar
+        - m_KeyId: 118287290589184
+          m_TableCodes:
+          - en
+          - ar
+        m_TypeString: TMPro.TMP_FontAsset, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+    - rid: 7897062277417795688
+      type: {class: AssetTypeMetadata, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries:
+        - m_KeyId: 43580189040640
+          m_TableCodes:
+          - en
+          - ar
+        - m_KeyId: 44676127121408
+          m_TableCodes:
+          - en
+          - ar
+        - m_KeyId: 95438895046656
+          m_TableCodes:
+          - en
+          - ar
+        - m_KeyId: 95948616228864
+          m_TableCodes:
+          - en
+          - ar
+        - m_KeyId: 98406318989312
+          m_TableCodes:
+          - en
+          - ar
+        - m_KeyId: 104193665785856
+          m_TableCodes:
+          - en
+          - ar
+        - m_KeyId: 107879360094208
+          m_TableCodes:
+          - en
+          - ar
+        - m_KeyId: 118287374475264
+          m_TableCodes:
+          - en
+          - ar
+        m_TypeString: UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null

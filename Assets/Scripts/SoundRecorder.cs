@@ -3,25 +3,28 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Linq;
 using UTool.TabSystem;
+using UnityEngine.Localization.Settings;
 
 [HasTabField]
 public class SoundRecorder : MonoBehaviour
 {
-    [TabField]
+    //[TabField]
+    [Range(0f, 1f)]
     public float maxExpectedLoudness = 0.3f;
-    [TabField]
+    //[TabField]
     public int SampleDuration = 5;
 
-    [SerializeField] private VolumeBarSegmented volumeBar;
-    [SerializeField] private UIFlowController mainWindowController;
+    [SerializeField] private RectRotationController volumeBarAr;
+    [SerializeField] private RectRotationController volumeBarEn;
+    [SerializeField] private UIFlowController mainWindowControllerAr;
+    [SerializeField] private UIFlowController mainWindowControllerEn;
     [SerializeField] private UIFlowController secondWindowController;
     [SerializeField] private Button recordButton;
-    [SerializeField] private Image volumeFill;
-
+    [SerializeField] private LeaderboardDisplay leaderboardAr;
+    [SerializeField] private LeaderboardDisplay leaderboardEn;
 
     private string microphone;
     private AudioClip recordedClip;
-    private bool isRecording;
 
     void Start()
     {
@@ -34,7 +37,6 @@ public class SoundRecorder : MonoBehaviour
 
         //statusText.text = "Recording...";
         recordedClip = Microphone.Start(microphone, false, SampleDuration, 44100);
-        isRecording = true;
         StartCoroutine(StopAfterDelay());
     }
 
@@ -47,14 +49,25 @@ public class SoundRecorder : MonoBehaviour
             yield return null;
         }
 
-        isRecording = false;
         Microphone.End(microphone);
         //statusText.text = "Processing...";
         int loudness = CalculateLoudness(recordedClip);
         GameManager.Instance.UpdateScore(loudness);
-        volumeFill.fillAmount = 0;
-        mainWindowController.ShowNext();
+
+        mainWindowControllerAr.ShowNext();
+        mainWindowControllerEn.ShowNext();
         secondWindowController.ShowNext();
+
+        bool isWin = loudness >= 50;
+        var selectedLocale = LocalizationSettings.SelectedLocale;
+        if (selectedLocale != null && selectedLocale.Identifier.Code == "ar")
+        {
+            leaderboardAr.GameFinish(isWin);
+        }
+        else
+        {
+            leaderboardEn.GameFinish(isWin);
+        }
     }
 
     void UpdateLoudnessVisual()
@@ -65,11 +78,15 @@ public class SoundRecorder : MonoBehaviour
         float[] waveData = new float[1024];
         recordedClip.GetData(waveData, micPosition);
 
-        float levelMax = waveData.Max(Mathf.Abs);
+        float levelMax = waveData.Average(Mathf.Abs);
 
-        float normalized = Mathf.Clamp01(levelMax / maxExpectedLoudness);
-        volumeBar.SetVolumeLevel(normalized);
+        // Normalize the levelMax based on maxExpectedLoudness
+        float normalized = Mathf.Clamp01(levelMax);
+        Debug.Log($"level max: {levelMax}, normalized is {normalized}");
 
+        // Update the volume bar with the normalized value
+        volumeBarAr.UpdateValue(normalized);
+        volumeBarEn.UpdateValue(normalized);
     }
 
     int CalculateLoudness(AudioClip clip)
@@ -84,10 +101,9 @@ public class SoundRecorder : MonoBehaviour
             sum += data[i] * data[i];
         }
 
-        double rms = Mathf.Sqrt((float)(sum / data.Length)); 
+        double rms = Mathf.Sqrt((float)(sum / data.Length));
         int loudness = Mathf.RoundToInt((float)(rms * 1000));
 
         return loudness;
     }
-
 }

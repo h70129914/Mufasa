@@ -23,6 +23,24 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-en
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7918932f5094b36489b2cfae66d6fca7
+    m_Address: Inter-Bold SDF
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3cf895a6876821e438ea6d03f9d2428a
+    m_Address: Inter-ExtraBold SDF
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f89c8dff31181794ea5ad0e1ff8faa96
+    m_Address: Inter-Regular SDF
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: f8a19599465f9eb4ba16ed32185e40e6, type: 2}
   m_SchemaSet:

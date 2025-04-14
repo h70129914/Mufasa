@@ -27,6 +27,13 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0caad75cb1ddec44aaef9a21f6609bca
+    m_Address: IBMPlexSansArabic-Medium SDF
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ar
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: f8a19599465f9eb4ba16ed32185e40e6, type: 2}
   m_SchemaSet:

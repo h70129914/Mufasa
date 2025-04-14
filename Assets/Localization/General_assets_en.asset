@@ -22,6 +22,78 @@ MonoBehaviour:
     m_Localized: 1c420ca06ad818b4bac2c41837263f0e[Main Screen en]
     m_Metadata:
       m_Items: []
+  - m_Id: 7429138931712
+    m_Localized: 91e05940517bd29409e299c7b4045a8b[Tutorial Screen]
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41231106170880
+    m_Localized: 38deaf871fb0c114da8170095eece25a[Tutorial Screen en]
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43580168069120
+    m_Localized: 7918932f5094b36489b2cfae66d6fca7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43580189040640
+    m_Localized: 7918932f5094b36489b2cfae66d6fca7[Inter-Bold SDF Material]
+    m_Metadata:
+      m_Items: []
+  - m_Id: 44676110344192
+    m_Localized: 7918932f5094b36489b2cfae66d6fca7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 44676127121408
+    m_Localized: 7918932f5094b36489b2cfae66d6fca7[Inter-Bold SDF Material]
+    m_Metadata:
+      m_Items: []
+  - m_Id: 95438630805504
+    m_Localized: 3cf895a6876821e438ea6d03f9d2428a
+    m_Metadata:
+      m_Items: []
+  - m_Id: 95438895046656
+    m_Localized: 0caad75cb1ddec44aaef9a21f6609bca[IBMPlexSansArabic-Medium SDF Material]
+    m_Metadata:
+      m_Items: []
+  - m_Id: 95948595257344
+    m_Localized: f89c8dff31181794ea5ad0e1ff8faa96
+    m_Metadata:
+      m_Items: []
+  - m_Id: 95948616228864
+    m_Localized: f89c8dff31181794ea5ad0e1ff8faa96[Inter-Regular SDF Material]
+    m_Metadata:
+      m_Items: []
+  - m_Id: 98406298017792
+    m_Localized: 7918932f5094b36489b2cfae66d6fca7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 98406318989312
+    m_Localized: 7918932f5094b36489b2cfae66d6fca7[Inter-Bold SDF Material]
+    m_Metadata:
+      m_Items: []
+  - m_Id: 104193644814336
+    m_Localized: 7918932f5094b36489b2cfae66d6fca7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 104193665785856
+    m_Localized: 7918932f5094b36489b2cfae66d6fca7[Inter-Bold SDF Material]
+    m_Metadata:
+      m_Items: []
+  - m_Id: 107879284596736
+    m_Localized: 7918932f5094b36489b2cfae66d6fca7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 107879360094208
+    m_Localized: 7918932f5094b36489b2cfae66d6fca7[Inter-Bold SDF Material]
+    m_Metadata:
+      m_Items: []
+  - m_Id: 118287290589184
+    m_Localized: 7918932f5094b36489b2cfae66d6fca7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 118287374475264
+    m_Localized: 7918932f5094b36489b2cfae66d6fca7[Inter-Bold SDF Material]
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

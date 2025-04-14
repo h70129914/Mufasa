@@ -14,7 +14,87 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_TableCollectionName: General_String
   m_TableCollectionNameGuidString: 930e1001c2e2c0b45a422ba9e3596db4
-  m_Entries: []
+  m_Entries:
+  - m_Id: 43172196507648
+    m_Key: SampleScene/Main Canvas/Toturial Screen/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43172251033600
+    m_Key: SampleScene/Main Canvas/Toturial Screen/Title 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43198486405120
+    m_Key: SampleScene/Main Canvas/Toturial Screen/Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43198490599424
+    m_Key: SampleScene/Main Canvas/Toturial Screen/Description 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43246335025152
+    m_Key: SampleScene/Main Canvas/Toturial Screen/Description (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43246335025153
+    m_Key: SampleScene/Main Canvas/Toturial Screen/Description (1) 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43298604441600
+    m_Key: SampleScene/Main Canvas/Toturial Screen/Description (2)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43298604441601
+    m_Key: SampleScene/Main Canvas/Toturial Screen/Description (2) 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43319286554624
+    m_Key: SampleScene/Main Canvas/Toturial Screen/Description (3)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43319294943232
+    m_Key: SampleScene/Main Canvas/Toturial Screen/Description (3) 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 95962927194112
+    m_Key: SampleScene/Seond Canvas/First Screen/Input field label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 95962990108672
+    m_Key: SampleScene/Seond Canvas/First Screen/Input field label 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 98440921997312
+    m_Key: SampleScene/Seond Canvas/First Screen/Submit Button/Text - RTLTMP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 98440926191616
+    m_Key: SampleScene/Seond Canvas/First Screen/Submit Button/Text - RTLTMP 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 104216281473024
+    m_Key: SampleScene/Seond Canvas/Reset Screen/Reset Button/Text - RTLTMP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 104216281473025
+    m_Key: SampleScene/Seond Canvas/Reset Screen/Reset Button/Text - RTLTMP 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 107845054881792
+    m_Key: SampleScene/Seond Canvas/First Screen/Register Button/Text - RTLTMP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 107845088436224
+    m_Key: SampleScene/Seond Canvas/First Screen/Register Button/Text - RTLTMP 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 118313723092992
+    m_Key: SampleScene/Seond Canvas/Record Screen/Record Button/Text - RTLTMP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 118313756647424
+    m_Key: SampleScene/Seond Canvas/Record Screen/Record Button/Text - RTLTMP 1
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
