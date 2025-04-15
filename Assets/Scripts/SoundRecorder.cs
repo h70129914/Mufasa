@@ -8,10 +8,7 @@ using UnityEngine.Localization.Settings;
 [HasTabField]
 public class SoundRecorder : MonoBehaviour
 {
-    //[TabField]
-    [Range(0f, 1f)]
-    public float maxExpectedLoudness = 0.3f;
-    //[TabField]
+    [TabField]
     public int SampleDuration = 5;
 
     [SerializeField] private RectRotationController volumeBarAr;
@@ -19,12 +16,12 @@ public class SoundRecorder : MonoBehaviour
     [SerializeField] private UIFlowController mainWindowControllerAr;
     [SerializeField] private UIFlowController mainWindowControllerEn;
     [SerializeField] private UIFlowController secondWindowController;
-    [SerializeField] private Button recordButton;
     [SerializeField] private LeaderboardDisplay leaderboardAr;
     [SerializeField] private LeaderboardDisplay leaderboardEn;
 
     private string microphone;
     private AudioClip recordedClip;
+    bool isMightyLion;
 
     void Start()
     {
@@ -58,15 +55,15 @@ public class SoundRecorder : MonoBehaviour
         mainWindowControllerEn.ShowNext();
         secondWindowController.ShowNext();
 
-        bool isWin = loudness >= 50;
+
         var selectedLocale = LocalizationSettings.SelectedLocale;
         if (selectedLocale != null && selectedLocale.Identifier.Code == "ar")
         {
-            leaderboardAr.GameFinish(isWin);
+            leaderboardAr.GameFinish(isMightyLion);
         }
         else
         {
-            leaderboardEn.GameFinish(isWin);
+            leaderboardEn.GameFinish(isMightyLion);
         }
     }
 
@@ -80,13 +77,10 @@ public class SoundRecorder : MonoBehaviour
 
         float levelMax = waveData.Average(Mathf.Abs);
 
-        // Normalize the levelMax based on maxExpectedLoudness
-        float normalized = Mathf.Clamp01(levelMax);
-        Debug.Log($"level max: {levelMax}, normalized is {normalized}");
+        isMightyLion = levelMax >= 0.5f;
 
-        // Update the volume bar with the normalized value
-        volumeBarAr.UpdateValue(normalized);
-        volumeBarEn.UpdateValue(normalized);
+        volumeBarAr.UpdateValue(levelMax);
+        volumeBarEn.UpdateValue(levelMax);
     }
 
     int CalculateLoudness(AudioClip clip)

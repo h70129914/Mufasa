@@ -10,14 +10,15 @@ public class LeaderboardDisplay : MonoBehaviour
     public GameObject winObject;
     public GameObject loseObject;
 
-    void Start()
+    void OnEnable()
     {
-        GameManager.Instance.OnScoreUpdated += UpdateLeaderboard;
+        Debug.Log("LeaderboardDisplay Start"); 
+        GameManager.OnScoreUpdated += UpdateLeaderboard;
     }
 
-    void OnDestroy()
+    void OnDisable()
     {
-        GameManager.Instance.OnScoreUpdated -= UpdateLeaderboard;
+        GameManager.OnScoreUpdated -= UpdateLeaderboard;
     }
 
     void UpdateLeaderboard()
@@ -31,7 +32,7 @@ public class LeaderboardDisplay : MonoBehaviour
             if (i < orderedScores.Count)
             {
                 var score = orderedScores[i];
-                leaderboardText.text += $"{i + 1}. {score.Key}: {score.Value}\n";
+                leaderboardText.text += $"{i + 1}. {score.Key}\n";
             }
             else
             {

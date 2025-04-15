@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public string currentPlayerName { get; set; }
 
     // Define the ScoreUpdated event
-    public event Action OnScoreUpdated;
+    public static event Action OnScoreUpdated;
 
     void Awake()
     {
